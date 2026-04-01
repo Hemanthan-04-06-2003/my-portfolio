@@ -551,6 +551,12 @@
             min-width: 300px;
         }
 
+        .hero-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .profile-image-container {
             flex-shrink: 0;
             animation: scaleIn 0.8s ease 0.4s both;
@@ -1099,6 +1105,26 @@
 
             .hero-text {
                 min-width: 0;
+                width: 100%;
+                display: contents;
+            }
+
+            .hero-intro {
+                order: 1;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-image-container {
+                order: 2;
+            }
+
+            .hero-description {
+                order: 3;
+                width: 100%;
+                text-align: center;
+                margin: 0;
             }
 
             .hero h1 {
@@ -1108,6 +1134,7 @@
 
             .hero-title {
                 font-size: 1.2rem;
+                text-align: center;
             }
 
             .hero-description {
@@ -1266,14 +1293,12 @@
                 <div class="hero">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <h1>HEMANATHAN</h1>
-                            <div class="hero-title">
-                                🤖 AI Developer
+                            <div class="hero-intro">
+                                <h1>HEMANATHAN</h1>
+                                <div class="hero-title">
+                                    🤖 AI Developer
+                                </div>
                             </div>
-                            <p class="hero-description">Computer Science graduate passionate about building AI-powered
-                                applications using Python, machine learning, and Generative AI technologies. Experienced
-                                in integrating LLMs, APIs, and databases to develop intelligent, scalable, and efficient
-                                solutions for real-world use cases.</p>
                         </div>
                         <div class="profile-image-container">
                             <svg class="profile-image" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -1290,6 +1315,10 @@
                                 <circle cx="125" cy="55" r="8" fill="rgba(0,102,204,0.6)" />
                             </svg>
                         </div>
+                        <p class="hero-description">Computer Science graduate passionate about building AI-powered
+                            applications using Python, machine learning, and Generative AI technologies. Experienced
+                            in integrating LLMs, APIs, and databases to develop intelligent, scalable, and efficient
+                            solutions for real-world use cases.</p>
                     </div>
                 </div><!-- About Section on Home -->
                 <h2 class="section-title" style="margin-top: 4rem;">About Me</h2>
