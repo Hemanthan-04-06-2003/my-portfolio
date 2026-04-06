@@ -281,73 +281,6 @@
             color: #ffffff;
         }
 
-        /* Testimonials */
-        .testimonials-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(230, 242, 255, 0.6) 100%);
-            padding: 2rem;
-            border-radius: 25px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 15px 40px rgba(74, 144, 226, 0.1);
-            transition: all 0.4s ease;
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            font-size: 3rem;
-            color: #0099ff;
-            opacity: 0.2;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            font-weight: 800;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 60px rgba(74, 144, 226, 0.2);
-        }
-
-        .testimonial-text {
-            color: #2d5a7b;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-
-        .testimonial-author {
-            color: #1a3a52;
-            font-weight: 700;
-            font-size: 1rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .testimonial-role {
-            color: #0099ff;
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-
-        body.dark-mode .testimonial-card {
-            background: linear-gradient(135deg, rgba(15, 30, 50, 0.9) 0%, rgba(20, 50, 80, 0.7) 100%);
-            border-color: rgba(0, 153, 255, 0.2);
-        }
-
-        body.dark-mode .testimonial-text {
-            color: #ffffff;
-        }
-
-        body.dark-mode .testimonial-author {
-            color: #e0e7ff;
-        }
-
         /* Call to Action */
         .cta-section {
             background: linear-gradient(135deg, #0099ff 0%, #0066cc 100%);
@@ -1156,15 +1089,13 @@
             .project-card,
             .contact-form,
             .education-item,
-            .info-card,
-            .testimonial-card {
+            .info-card {
                 padding: 1.4rem;
                 border-radius: 22px;
             }
 
             .about-grid,
-            .github-stats,
-            .testimonials-container {
+            .github-stats {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
@@ -1372,35 +1303,6 @@
                             </div>
                             <div class="stat-label">
                                 Stars Earned
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Testimonials</h2>
-                    <div class="testimonials-container">
-                        <div class="testimonial-card">
-                            <div class="testimonial-text">
-                                Hemanathan is an exceptional AI developer with deep knowledge of LLMs and RAG systems.
-                                His ability to solve complex problems is outstanding.
-                            </div>
-                            <div class="testimonial-author">
-                                Rajesh Kumar
-                            </div>
-                            <div class="testimonial-role">
-                                Project Manager @ Tech Solutions
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="testimonial-text">
-                                Working with Hemanathan was a great experience. He demonstrates strong technical skills
-                                and delivers projects on time with excellent quality.
-                            </div>
-                            <div class="testimonial-author">
-                                Priya Sharma
-                            </div>
-                            <div class="testimonial-role">
-                                Senior Developer @ AI Innovations
                             </div>
                         </div>
                     </div>
@@ -1619,35 +1521,6 @@
                             </div>
                             <div class="stat-label">
                                 Stars Earned
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Testimonials</h2>
-                    <div class="testimonials-container">
-                        <div class="testimonial-card">
-                            <div class="testimonial-text">
-                                Hemanathan is an exceptional AI developer with deep knowledge of LLMs and RAG systems.
-                                His ability to solve complex problems is outstanding.
-                            </div>
-                            <div class="testimonial-author">
-                                Rajesh Kumar
-                            </div>
-                            <div class="testimonial-role">
-                                Project Manager @ Tech Solutions
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="testimonial-text">
-                                Working with Hemanathan was a great experience. He demonstrates strong technical skills
-                                and delivers projects on time with excellent quality.
-                            </div>
-                            <div class="testimonial-author">
-                                Priya Sharma
-                            </div>
-                            <div class="testimonial-role">
-                                Senior Developer @ AI Innovations
                             </div>
                         </div>
                     </div>
